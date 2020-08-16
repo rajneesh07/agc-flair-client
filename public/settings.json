@@ -1,0 +1,108 @@
+{
+    "FLAIR_AWS_PORT": 8000,
+    "FLAIR_SERVER_URL": "https://bl-socket-server.herokuapp.com",
+    "SERVER_TIMEOUT_MS": 20000,
+    "CRM_TIMEOUT_MS": 10000,
+    "BASE_CRM_URL": "./BLCRM.html",
+    "ALLOW_OUTBOUND_DIALING": true,
+    "AGENT_STATE_POLLING_INTERVAL_MS": 1000,
+    "INTERNAL_NUMBERS_MAX_LENGTH": 6,
+    "OUTCALLING_REASON_CODE": 1,
+    "QUICK_LINK_LIST": [
+        {
+            "label": "SFDC",
+            "href": "http://login.salesforce.com"
+        },
+        {
+            "label": "Finnacle",
+            "href": "http://login.salesforce.com"
+        }
+    ],
+    "QUESS": {
+        "CRM": {
+            "URL": "http://192.168.230.75/QuessPop/Default.aspx"
+        },
+        "UUI_KEYS": [
+            "UCID",
+            "uniqueID"
+        ]
+    },
+    "AVAILABLE_AGENT_STATES": [
+        {
+            "label": "Ready",
+            "state": 4,
+            "userSelectable": true,
+            "reasonCode": null
+        },
+        {
+            "label": "After Call Work",
+            "state": 5,
+            "userSelectable": false,
+            "reasonCode": null
+        },
+        {
+            "label": "Work Ready",
+            "state": 6,
+            "userSelectable": false,
+            "reasonCode": null
+        },
+        {
+            "label": "Busy",
+            "state": 7,
+            "userSelectable": false,
+            "reasonCode": null
+        }
+    ],
+    "AGENT_REASON_CODE_LIST": [
+        {
+            "reasonCode": 0,
+            "reasonLabel": "Not Ready"
+        },
+        {
+            "reasonCode": 1,
+            "reasonLabel": "Outbound Call"
+        },
+        {
+            "reasonCode": 2,
+            "reasonLabel": "Lunch"
+        },
+        {
+            "reasonCode": 3,
+            "reasonLabel": "Dinner"
+        }
+    ],
+    "leftComponents": {
+        "width": "2",
+        "widgets": [
+            {
+                "name": "quick-links"
+               
+            },
+            {
+                "name": "sms-helper"
+            },
+            {
+                "name": "menu-traversal"
+            },
+            {
+                "name": "agent-note"
+            }
+        ]
+    },
+    "middleComponents": {
+        "width": "8",
+        "widgets": [
+            {
+                "name": "base-crm-frame"
+            }
+        ]
+    },
+    "rightComponents": {
+        "width": "2",
+        "widgets": [
+            {
+                "name": "chat-disposition"
+            }
+        ]
+    }
+}

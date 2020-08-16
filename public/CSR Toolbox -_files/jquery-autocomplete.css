@@ -1,0 +1,15 @@
+.autocomplete-suggestions {
+	background: rgb(255, 255, 255); margin: -1px 0px 0px 1px; border-radius: 0px 0px 4px 4px; border: 1px solid rgb(99, 186, 95); overflow: auto;
+}
+.autocomplete-suggestion {
+	padding: 2px 5px; overflow: hidden; white-space: nowrap;
+}
+.autocomplete-selected {
+	background: rgb(240, 240, 240);
+}
+.autocomplete-suggestions strong {
+	color: rgb(99, 186, 95); font-weight: normal;
+}
+.autocomplete-loader {
+	background: url("../img/loading.gif") no-repeat right;
+}
