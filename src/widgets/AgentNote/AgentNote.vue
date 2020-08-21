@@ -3,7 +3,7 @@
     <template v-slot:body>
       <div class="list-group px-3">
         <div class="form-group">
-          <label for="exampleFormControlTextarea2">Small textarea</label>
+          <!--<label for="exampleFormControlTextarea2">Small textarea</label> -->
           <textarea
             v-model="Notevalue"
             class="form-control rounded-0"

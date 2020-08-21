@@ -16,29 +16,28 @@
     </div>
 
     <CollapseTransition>
-      <mdb-container fluid v-show="showSettings" class="agc-chat-settings-button-bar py-3">
+      <mdb-container fluid v-show="showSettings" class="agc-chat-settings-button-bar">
         <mdb-row>
-          <mdb-col>
-            <mdb-btn
+        <!--  <mdb-col> -->
+            <!--<mdb-btn
               outline="info"
               block
               class="agc-chat-settings-btn"
               @click.native="emitToggleHistory"
             >
               <mdb-icon icon="cog" class="cyan-text mr-3"></mdb-icon>history
-            </mdb-btn>
-          </mdb-col>
+            </mdb-btn> -->
+        <!--  </mdb-col> -->
 
-          <mdb-col>
+        <!--  <mdb-col> -->
             <mdb-btn
               outline="danger"
               block
               class="agc-chat-settings-btn"
-              @click.native="onEndChatButtonClicked"
-            >
-              <mdb-icon icon="trash" class="danger-text mr-3"></mdb-icon>end chat
+              @click.native="onEndChatButtonClicked">
+            <mdb-icon icon="trash" class="danger-text mr-3"></mdb-icon>end chat
             </mdb-btn>
-          </mdb-col>
+        <!--  </mdb-col> -->
         </mdb-row>
       </mdb-container>
     </CollapseTransition>
@@ -85,8 +84,10 @@ export default {
   right: 0px;
 }
 .agc-chat-settings-button-bar {
-  /* width: 85%; */
+  width: 40%; 
   background-color: white;
+  text-align: center;
+  left : 150px ;
   /* border-radius: 14px; */
 }
 .agc-chat-settings-toggler {
@@ -104,7 +105,6 @@ export default {
   opacity: 0.5;
 }
 .agc-chat-settings-btn {
-  
   border-radius: 28px;
   font-weight: bold;
 }
