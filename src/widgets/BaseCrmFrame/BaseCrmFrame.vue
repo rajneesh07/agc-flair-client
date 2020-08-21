@@ -80,15 +80,18 @@ export default {
 
     CRM_URL() {
       if (this.callingAddress) {
-        return (
-          "http://192.168.29.247:4000/?cli=" +
-          this.callingAddress +
-          "&dnis=" +
-          this.calledAddress +
-          "&sessionId=" +
-          this.sessionId +
-          "&agentId=" +
-          this.agentCredentials.agentId
+        // return (
+        //   "http://192.168.29.247:4000/?cli=" +
+        //   this.callingAddress +
+        //   "&dnis=" +
+        //   this.calledAddress +
+        //   "&sessionId=" +
+        //   this.sessionId +
+        //   "&agentId=" +
+        //   this.agentCredentials.agentId
+        // );
+        return(
+          "https://thawing-cliffs-53793.herokuapp.com/dash"
         );
       } else {
         return this.defaultUrl;

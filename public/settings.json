@@ -3,7 +3,7 @@
     "FLAIR_SERVER_URL": "https://bl-socket-server.herokuapp.com/",
     "SERVER_TIMEOUT_MS": 20000,
     "CRM_TIMEOUT_MS": 10000,
-    "BASE_CRM_URL": "./BLCRM.html",
+    "BASE_CRM_URL": "https://thawing-cliffs-53793.herokuapp.com/",
     "ALLOW_OUTBOUND_DIALING": true,
     "AGENT_STATE_POLLING_INTERVAL_MS": 1000,
     "INTERNAL_NUMBERS_MAX_LENGTH": 6,
